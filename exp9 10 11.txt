@@ -1,0 +1,235 @@
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /
+$ cd D:
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d
+$ mkdir exp9
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d
+$ cd exp9
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9
+$ git init
+Initialized empty Git repository in D:/exp9/.git/
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ nano 9exp.txt
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git add .
+warning: in the working copy of '9exp.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git commit -m "first comment"
+[master (root-commit) b70d25b] first comment
+ 1 file changed, 3 insertions(+)
+ create mode 100644 9exp.txt
+
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ nano 9exp.txt
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git add .
+warning: in the working copy of '9exp.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git commit -m "second comment"
+[master 46b7dae] second comment
+ 1 file changed, 1 insertion(+)
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ nano 9exp.txt
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git add .
+warning: in the working copy of '9exp.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git commit -m "third comment"
+[master 4b86648] third comment
+ 1 file changed, 1 insertion(+)
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ nano 9exp.txt
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git add .
+warning: in the working copy of '9exp.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git commit -m "fourth comment"
+[master 7cd0d05] fourth comment
+ 1 file changed, 1 insertion(+)
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ nano 9exp.txt
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git add .
+warning: in the working copy of '9exp.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git commit -m "fifth comment"
+[master d281227] fifth comment
+ 1 file changed, 1 insertion(+)
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git log
+commit d2812270353dfa93745346728c0f17d03e225ad6 (HEAD -> master)
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:59:12 2024 +0530
+
+    fifth comment
+
+commit 7cd0d050f738a56802692e5248b2a3bdd826fda1
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:57:52 2024 +0530
+
+    fourth comment
+
+commit 4b866481ab051136b76abac133158b54ce7746b2
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:56:42 2024 +0530
+
+    third comment
+
+commit 46b7dae67710aac00b49ab895ad41b3c0dae580e
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:55:20 2024 +0530
+
+    second comment
+
+commit b70d25b2477dee34489165cf15a401ad79871961
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:53:17 2024 +0530
+
+    first comment
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=angadirakshita89@gmail.com
+user.name=Rakshita203
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git log -n 1  b70d25b2477dee34489165cf15a401ad79871961
+commit b70d25b2477dee34489165cf15a401ad79871961
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:53:17 2024 +0530
+
+    first comment
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git show  b70d25b2477dee34489165cf15a401ad79871961
+commit b70d25b2477dee34489165cf15a401ad79871961
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:53:17 2024 +0530
+
+    first comment
+
+diff --git a/9exp.txt b/9exp.txt
+new file mode 100644
+index 0000000..1f4cfd4
+--- /dev/null
++++ b/9exp.txt
+@@ -0,0 +1,3 @@
++good morning
++welcome to gitlab
++analysing and changing history
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git log --author="Rakshita203" --since="11-05-2024" --until="11-06-2024"
+commit d2812270353dfa93745346728c0f17d03e225ad6 (HEAD -> master)
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:59:12 2024 +0530
+
+    fifth comment
+
+commit 7cd0d050f738a56802692e5248b2a3bdd826fda1
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:57:52 2024 +0530
+
+    fourth comment
+
+commit 4b866481ab051136b76abac133158b54ce7746b2
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:56:42 2024 +0530
+
+    third comment
+
+commit 46b7dae67710aac00b49ab895ad41b3c0dae580e
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:55:20 2024 +0530
+
+    second comment
+
+commit b70d25b2477dee34489165cf15a401ad79871961
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:53:17 2024 +0530
+
+    first comment
+
+BLDEA-CSE@DESKTOP-5LEP3M5 MINGW64 /d/exp9 (master)
+$ git log -n 3
+commit d2812270353dfa93745346728c0f17d03e225ad6 (HEAD -> master)
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:59:12 2024 +0530
+
+    fifth comment
+
+commit 7cd0d050f738a56802692e5248b2a3bdd826fda1
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:57:52 2024 +0530
+
+    fourth comment
+
+commit 4b866481ab051136b76abac133158b54ce7746b2
+Author: Rakshita203 <angadirakshita89@gmail.com>
+Date:   Wed Nov 6 09:56:42 2024 +0530
+
+    third comment
